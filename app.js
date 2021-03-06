@@ -1,25 +1,29 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
-
+Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element 
+is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses
+ the values that were input into the function:
 "The sum of 4 and 7 is 11."
-
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
-
+Test this function by hand in the console to get it working, and when you think it is finished, 
+uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-
+let firtNum=prompt('Enter the first number');
+let secoundNum=prompt('Enter the secound number');
+function sum(firtNum , secoundNum){
+    let Tsum =parseInt (firtNum) + parseInt (secoundNum);
+    return Tsum;
 }
-
-// Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
-
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+ sum(firtNum ,secoundNum);
+ console.log(sum (firtNum ,secoundNum), "The sum of " + firtNum + "and"  + secoundNum + " is =", sum (firtNum ,secoundNum)) ;
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
+//Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element 
+is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses 
+the values that were input into the function:
 
 "The product of 5 and 9 is 45."
 
@@ -37,7 +41,9 @@ function multiply(a, b) { //eslint-disable-line
 
 /////////////////////////////////////
 /* Problem 3
-Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
+Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the 
+first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third 
+and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
