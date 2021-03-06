@@ -14,9 +14,11 @@ function sum(firtNum , secoundNum){
     let Tsum =parseInt (firtNum) + parseInt (secoundNum);
     return Tsum;
 }
- sum(firtNum ,secoundNum);
+
+sum(firtNum ,secoundNum);
  console.log(sum (firtNum ,secoundNum), "The sum of " + firtNum + "and"  + secoundNum + " is =", sum (firtNum ,secoundNum)) ;
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
+
+ // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 //Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -28,15 +30,16 @@ the values that were input into the function:
 Test this function by hand in the console to get it working, and when you think it is finished, 
 uncomment the call for the testMultiply() function and see if the test passes.*/
 // Write your code here
+
 let aNum=prompt('enter a number');
 let bNum=prompt('enter another number ');
 function multiply(aNum, bNum) { //eslint-disable-line
     let Tmultiply=parseInt (aNum) * parseInt (bNum);
     return Tmultiply;
 }
+
 multiply(aNum , bNum);
 console.log(multiply (aNum ,bNum), "The sum of " + aNum + "and"  + bNum + " is =", multiply (aNum ,bNum)) ;
-
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -54,28 +57,43 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created.
 You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
-
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
 
+let a=prompt('put a number');
+let b=prompt('put a secound number');
+let c=prompt('put the last number');
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+ let Msum = parseInt(a)+parseInt(b)+parseInt(c);
+ return Msum;
+} 
+sumAndMultiply(a, b, c);
+console.log(a,'and',b,'and',c,'sum to',sumAndMultiply(a, b, c));
+
+function Mmultiply(a , b , c){
+    let multy =parseInt(a)*parseInt(b)*parseInt(c);
+    return multy;
 }
+Mmultiply(a,b,c);
+console.log(a,'and',b,'and',c,'is =',Mmultiply(a,b,c));
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
-
 /////////////////////////////////////
+
 /* Problem 4
-Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
-
+Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array 
+where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows
+ this example and uses the values that were input into the function:
 "2,3,4 was passed in as an array of numbers, and 9 is their sum."
-
-IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
-
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
-
+IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've
+already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator
+ for string concatenation.
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() 
+function and see if the test passes.*/
 // Write your code here
+
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
