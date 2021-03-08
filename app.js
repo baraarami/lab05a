@@ -59,25 +59,16 @@ You're going to have to be resourceful to figure out how to do this. However, yo
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 // Write your code here
 
-let a=prompt('put a number');
-let b=prompt('put a secound number');
-let c=prompt('put the last number');
 function sumAndMultiply(a, b, c) { //eslint-disable-line
- let Msum = parseInt(a)+parseInt(b)+parseInt(c);
- return Msum;
-} 
-sumAndMultiply(a, b, c);
-console.log(a,'and',b,'and',c,'sum to',sumAndMultiply(a, b, c));
-
-function Mmultiply(a , b , c){
-    let multy =parseInt(a)*parseInt(b)*parseInt(c);
-    return multy;
+let SM = (testSum (4,7) +c);
+let MS = ( testMultiply(5,9) *c);
+let sumandM = a + 'and' + b + 'and' + c + 'sum to ' SM;
+let Sandmultiply = 'The priduct of '+ a + 'and' + b +'and' + c + 'is' + MS;
+ return SM , MS , sumandM ,Sandmultiply ;
 }
-Mmultiply(a,b,c);
-console.log(a,'and',b,'and',c,'is =',Mmultiply(a,b,c));
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 /////////////////////////////////////
