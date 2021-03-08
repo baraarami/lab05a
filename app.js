@@ -28,18 +28,15 @@ Test this function by hand in the console to get it working, and when you think 
 uncomment the call for the testMultiply() function and see if the test passes.*/
 // Write your code here
 
-let aNum=prompt('enter a number');
-let bNum=prompt('enter another number ');
-function multiply(aNum, bNum) { //eslint-disable-line
-    let Tmultiply=parseInt (aNum) * parseInt (bNum);
-    return Tmultiply;
+function multiply(a, b) { //eslint-disable-line
+ 
+let testMultiply=a*b;
+let M = 'The product of ' + a + 'and' + b +'is  ' +testMultyply ;
+ return testMultiply ,M;
 }
 
-multiply(aNum , bNum);
-console.log(multiply (aNum ,bNum), "The sum of " + aNum + "and"  + bNum + " is =", multiply (aNum ,bNum)) ;
-
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+ testMultiply(5,9);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 // Don't forget to create a new branch for your work on the next question!
 
