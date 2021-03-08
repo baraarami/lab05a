@@ -8,14 +8,12 @@ is the sum of those numbers, and the second element is a concatenated string tha
 Test this function by hand in the console to get it working, and when you think it is finished, 
 uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 // Write your code here
-let firtNum=prompt('Enter the first number');
-let secoundNum=prompt('Enter the secound number');
-function sum(firtNum , secoundNum){
-    let Tsum =parseInt (firtNum) + parseInt (secoundNum);
-    return Tsum;
+function sum( a, b){
+    let Tsum =parseInt (a) + parseInt (b);
+    let S= 'The sum of' + a + 'and' + b + 'is  ' + Tsum ;
+    return Tsum , S;
 }
- sum(firtNum ,secoundNum);
- console.log(sum (firtNum ,secoundNum), "The sum of " + firtNum + "and"  + secoundNum + " is =", sum (firtNum ,secoundNum)) ;
+testSum(4,7);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 //Don't forget to create a new branch for your work on the next question!
 
