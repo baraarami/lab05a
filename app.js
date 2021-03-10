@@ -13,7 +13,9 @@ function sum( a, b){
     let S= 'The sum of' + a + 'and' + b + 'is  ' + Tsum ;
     return Tsum , S;
 }
+
 testSum(4,7);
+
 
 //Don't forget to create a new branch for your work on the next question!
 
@@ -36,6 +38,7 @@ let M = 'The product of ' + a + 'and' + b +'is  ' +testMultyply ;
 
 // Here is the test for multiply(); uncomment it to run it
  testMultiply(5,9);
+
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 // Don't forget to create a new branch for your work on the next question!
 
@@ -81,6 +84,11 @@ function and see if the test passes.*/
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+let sum1=sum(testArray[0],testArray[1])[0];
+let sum2=sum(testArray[2],sum1)[0];
+let sumtion = testArray[0]+','+testArray[1]+','+teatArray[2]+'was passed in as an array of numbers, and' + sum2 +'is their sum.';
+ return sum2 , sumtion ;
+
     let mSum =sum(testArray[0],testArray[1])[0];
     let mSum1=sum(testArray[2],mSum)[0];
     let mSum2=testArray[0]+','+testArray[1]+','+testArray[2]+'was passed in as an array of numbers, and '+mSum1+' is their sum.'
@@ -88,10 +96,15 @@ function sumArray(sumArr) { //eslint-disable-line
     console.log(mSum1);
     
     return [mSum1,mSum2];
+
 }
 // Here is the test for sumArray(); uncomment it to run it
 
+
+ testSumArray(testArray);
+
  SumArray(testArray);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -108,6 +121,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+
+let malti1 = multiply(testArray[0],testArray[1])[0];
+let malti2 = multiply(testArray[2],multi1)[0];
+let malti ='The numbers'+testArray[0]+','+testArray[1]+','+testArray[2]+','+'have a product of' +multi2;
+ return malti2 , malti ;
+}
+
+// Here is the test for multiplyArray(); uncomment it to run it
+ testMultiplyArray(testArray);
+
     let num=multiply(testArray[0],testArray[1])[0];
     let num1=multiply(testArray[2],num)[0];
     let Num='The numbers'+testArray[0]+','+testArray[1]+','+testArray[2]+'have a product of'+num1
@@ -117,6 +140,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 // Here is the test for multiplyArray(); uncomment it to run it
  multiplyArray(testArray);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
