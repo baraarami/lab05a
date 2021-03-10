@@ -9,9 +9,10 @@ Test this function by hand in the console to get it working, and when you think 
 uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 // Write your code here
 function sum( a, b){
-    let Tsum =parseInt (a) + parseInt (b);
+    let Tsum = a + b;
     let S= 'The sum of' + a + 'and' + b + 'is  ' + Tsum ;
-    return Tsum , S;
+    console.log(S) ;
+    return [ Tsum , S ];
 }
 testSum(4,7);
 //Don't forget to create a new branch for your work on the next question!
@@ -30,6 +31,7 @@ function multiply(a, b) { //eslint-disable-line
  
 let testMultiply=a*b;
 let M = 'The product of ' + a + 'and' + b +'is  ' +testMultyply ;
+  console.log(M);
  return testMultiply ,M;
 }
 
@@ -56,6 +58,7 @@ let SM = (testSum (4,7) +c);
 let MS = ( testMultiply(5,9) *c);
 let sumandM = a + 'and' + b + 'and' + c + 'sum to ' SM;
 let Sandmultiply = 'The priduct of '+ a + 'and' + b +'and' + c + 'is' + MS;
+  console.log(sumandM , Sandmultiply) ;
  return SM , MS , sumandM ,Sandmultiply ;
 }
 
