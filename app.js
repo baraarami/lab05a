@@ -9,9 +9,9 @@ Test this function by hand in the console to get it working, and when you think 
 uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 // Write your code here
 function sum( a, b){
-    let Tsum =parseInt (a) + parseInt (b);
+    let Tsum = a +  b;
     let S= 'The sum of' + a + 'and' + b + 'is  ' + Tsum ;
-    return Tsum , S;
+    return [ Tsum , S ];
 }
 testSum(4,7);
 
@@ -29,7 +29,7 @@ uncomment the call for the testMultiply() function and see if the test passes.*/
 
 function multiply(a, b) { //eslint-disable-line
  
-let testMultiply=a*b;
+let testMultiply= a * b ;
 let M = 'The product of ' + a + 'and' + b +'is  ' +testMultyply ;
  return testMultiply ,M;
 }
