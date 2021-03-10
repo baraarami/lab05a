@@ -14,7 +14,6 @@ function sum( a, b){
     return Tsum , S;
 }
 testSum(4,7);
-
 //Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
